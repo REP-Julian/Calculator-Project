@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Calculator</title>
+
+  <!-- Connect the CSS file -->
+  <link rel="stylesheet" href="Calculator.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="calculator" aria-label="Calculator">
+      <!-- This readonly input acts as the calculator display screen -->
+      <input
+        id="display"
+        class="display"
+        type="text"
+        value="0"
+        readonly
+        aria-live="polite"
+      />
+
+      <!-- Calculator buttons -->
+      <div class="buttons">
+        <button class="btn btn-clear area-clear" type="button" data-action="clear">C</button>
+        <button class="btn btn-operator area-divide" type="button" data-action="operator" data-operator="/">÷</button>
+        <button class="btn btn-operator area-multiply" type="button" data-action="operator" data-operator="*">×</button>
+        <button class="btn btn-operator area-subtract" type="button" data-action="operator" data-operator="-">−</button>
+
+        <button class="btn area-seven" type="button" data-value="7">7</button>
+        <button class="btn area-eight" type="button" data-value="8">8</button>
+        <button class="btn area-nine" type="button" data-value="9">9</button>
+        <button class="btn btn-operator area-add" type="button" data-action="operator" data-operator="+">+</button>
+
+        <button class="btn area-four" type="button" data-value="4">4</button>
+        <button class="btn area-five" type="button" data-value="5">5</button>
+        <button class="btn area-six" type="button" data-value="6">6</button>
+
+        <button class="btn area-one" type="button" data-value="1">1</button>
+        <button class="btn area-two" type="button" data-value="2">2</button>
+        <button class="btn area-three" type="button" data-value="3">3</button>
+
+        <button class="btn area-zero" type="button" data-value="0">0</button>
+        <button class="btn area-decimal" type="button" data-value=".">.</button>
+
+        <button class="btn btn-equals area-equals" type="button" data-action="calculate">=</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Connect the JavaScript file -->
+  <script src="Calculator.js"></script>
+</body>
+</html>
